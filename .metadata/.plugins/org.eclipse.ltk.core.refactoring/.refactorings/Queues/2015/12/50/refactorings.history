@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;ie.gmit.sw&apos; to &apos;ie.gmit.sw.queue&apos;&#x0D;&#x0A;- Original project: &apos;Queues&apos;&#x0D;&#x0A;- Original element: &apos;Queues/src/ie.gmit.sw&apos;&#x0D;&#x0A;- Renamed element: &apos;Queues/src/ie.gmit.sw.queue&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;ie.gmit.sw&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;ie.gmit.sw" name="ie.gmit.sw.queue" qualified="false" references="true" stamp="1450024886759" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,24 @@
+package ie.gmit.sw.queue;
+
+import java.util.*;
+import java.util.concurrent.*;
+
+public class VigenereHandler{
+	
+	private BlockingQueue<Request> queue;
+	private Map<Long, String> out = new ConcurrentHashMap<Long, String>();
+	
+	public void VignereHandler(BlockingQueue<Request> q, Map<> out) {
+		this.queue = q;
+		this.out = out;
+	}
+	
+	public void run() {
+		try{
+			Request req = queue.take();
+			VigenereBreaker vb = Naming;
+			String result = vb.decrypt(req.getText(), req.getKeyLength());
+			out.put(req.getJobNumber, result);
+		}
+	}	
+}
