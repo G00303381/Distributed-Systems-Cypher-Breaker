@@ -6,11 +6,11 @@ public class Request
 	private int maxKeySize;
 	private long jobNumber;
 	
-	public Request(String cText, int maxNo, long jobNo)
+	public Request(String cypherT, int maxKey, long jobNum)
 	{
-		setCypherText(cText);
-		setMaxKeySize(maxNo);
-		setJobNumber(jobNo);
+		setCypherText(cypherT);
+		setMaxKeySize(maxKey);
+		setJobNumber(jobNum);
 	}
 
 	public String getCypherText()

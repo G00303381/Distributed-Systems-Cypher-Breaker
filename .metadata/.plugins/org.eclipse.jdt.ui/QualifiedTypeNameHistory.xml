@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="ie.gmit.sw.VigenereHandler"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.Vigenere"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.queue.VigenereRequestManager"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.queue.Request"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.VigernereBreaker"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.VigenereBreaker"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.Dave"/>
+</qualifiedTypeNameHistroy>

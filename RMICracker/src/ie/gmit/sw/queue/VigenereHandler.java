@@ -17,13 +17,14 @@ public class VigenereHandler implements Runnable
 	{
 		this.out = out;
 		this.queue = q;
-		run();
+		run();	//call the run method
 	}
 	
 	public void run()
 	{
 		try 
 		{
+			//retrieve an object from the queue
 			req = queue.take();
 		} 
 		
@@ -35,6 +36,7 @@ public class VigenereHandler implements Runnable
 		{
 			VigenereBreaker vb = (VigenereBreaker) Naming.lookup("Cypher-Service");
 			result = vb.decrypt(req.getCypherText(),  req.getMaxKeySize());
+			//put the jobnumber and decypted text on the map
 			out.put(req.getJobNumber(), result);
 
 		}
@@ -45,10 +47,12 @@ public class VigenereHandler implements Runnable
 	}	
 	public String returnResult()
 	{
+		//return the value that the jobnumber is associated with
 		return out.get(req.getJobNumber());
 	}
 	public void removeRequest(long jobNumber)
 	{
+		//remove the jobnumber from the map
 		out.remove(jobNumber);
 	}
 }
